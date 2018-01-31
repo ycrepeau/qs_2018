@@ -1,0 +1,78 @@
+
+#app
+  @include xy-grid-container
+  padding-left: 0 !important
+  padding-right: 0 !important
+
+  @include breakpoint(medium)
+    padding-left: 15px !important
+    padding-right: 15px !important
+
+  .map
+    @include xy-grid
+    .map-main
+      background-color: rgba(blue, 0.1)
+      @include xy-cell(full, $gutter-output: false, $gutters:0)
+      @include breakpoint(medium)
+        @include xy-cell(auto, $gutter-output: true)
+
+    .map-sidebar
+      //Small size (telephone vertical)
+      background-color: DarkGray
+      
+      @include xy-cell(full, $gutter-output: false, $gutters:0)
+
+      //Medium size (telephone horizontal, tablette)
+      @include breakpoint(medium)
+        background-color: DarkKhaki
+        @include xy-cell(4, $gutter-output: true)      
+
+      //Large size (écran ordi)
+      @include breakpoint(large)
+        
+        background-color: AntiqueWhite
+        padding: 15px
+        @include xy-cell(3, $gutter-output: true)  
+
+
+li
+  margin-bottom: 5px
+
+$clementine: #ff5505
+$minuit: #17173d 
+$base_size: 48pt
+$size_ratio: 0.6
+
+
+.grid-container
+  margin-top: 35px
+
+.text_qs 
+  display: flex
+  align-items: center
+
+.logo_qs
+  &.minuit
+    background-color: $minuit
+  &>.img
+    width: calc(#{$base_size * 5})
+    height: auto
+.qs1, .qs2
+  font-family: 'Poppins', sans-serif;
+
+
+.qs1
+  font-size: $base_size
+  font-weight: 700
+  color: $clementine
+  &.minuit
+    color: $minuit
+  &.clementine
+    color: $clementine
+
+.qs2
+  font-size: calc(#{$base_size} * #{$size_ratio})
+  font-weight: 600
+
+.invitation
+  font-weight: 200

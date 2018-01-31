@@ -1,0 +1,49 @@
+!!!!
+%html.no-js{lang: 'en'}
+  %head 
+    %meta{charset: 'utf-8'}
+    %meta{http: {equiv: "x-ua-compatible"}, content: "ie=edge"}
+    %meta{name: 'viewport', content: "width=device-width, initial-scale=1.0"}
+    %link{rel:"stylesheet", href:"https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,400i,500,500i,600,600i,700,700i,800,900"}
+    %link{rel:"stylesheet", href:"css/app.css"}
+    %title Bonjour à tous!
+    
+  %body
+    %div{style:"height: 1cm"}
+    .grid-container
+      .grid-x
+        .shrink.cell.logo_qs
+          %img.img(src="/img/qs_2018_logo.svg")
+        .cell.auto.text_qs
+          .grid-y
+            .qs1 Québec solidaire
+            .qs2 Sainte-Marie — Saint-Jacques
+      .grid-x
+        .cell.auto
+          %H1.text-center Invitation
+          %H2.text-center Assemblée de cuisine
+          %p.invitation
+            Des membres de notre association de circonscription ont pris l'initiative d'organiser 
+            chez elles/eux une assemblée de cuisine afin de pouvoir discuter des enjeux de la 
+            prochaine élection générale qui aura lieue le 1er octobre prochain.  
+          
+          %p.invitation
+            L'idée est simple: on se réunit à 5 ou 6 et chacunE apporte un petit quelquechose 
+            à grignoter qu'on pourra se partager. Une courte vidéo ou une petite présentation ouvre 
+            les débats et chacunE pourra poser ses questions ou apporter ses commentaires. 
+
+          %p.invitation
+            Si vous êtes intéresséE à participer ou mieux encore si vous voulez vous porter volontaire 
+            pour organiser une assemblée de cuisine chez vous, nous vous prions de consulter notre 
+            nouveau site web à l'adresse: 
+
+            %a(href='http://mouvement.quebecsolidaire.net')
+              http://mouvement.quebecsolidaire.net
+
+          
+    %div{style:"height: 1cm"}
+    %script{src: "js/fontawesome-all.js"}
+    %script{src: "/js/jquery.js"}
+    %script{src: "/js/foundation.js"}
+    %script{src: "/js/app.js"}    
+

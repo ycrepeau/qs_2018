@@ -1,0 +1,136 @@
+!!!
+%html.no-js{:lang => "en"}
+  %head
+    %meta{:charset => "utf-8"}/
+    %meta{:content => "ie=edge", "http-equiv" => "x-ua-compatible"}/
+    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
+    %title Foundation for Sites
+    %link{:href => "css/app.css", :rel => "stylesheet"}/
+    %script{:src => "js/modernizr.js"}
+  %body
+    .grid-container
+      .grid-x.grid-padding-x
+        .large-12.cell
+          %h1 Welcome to Foundation
+      .grid-x.grid-padding-x
+        .large-12.cell
+          .callout
+            %h3 We’re stoked you want to try Foundation!!!
+            %p To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.
+            %p Once you've exhausted the fun in this document, you should check out:
+            .grid-x.grid-padding-x
+              .large-4.medium-4.cell
+                %p
+                  %a{:href => "http://foundation.zurb.com/docs"} Foundation Documentation
+                  = succeed "Everything" do
+                    %br/
+              .large-4.medium-4.cell
+                %p
+                  %a{:href => "http://zurb.com/university/code-skills"} Foundation Code Skills
+                  = succeed "These" do
+                    %br/
+              .large-4.medium-4.cell
+                %p
+                  %a{:href => "http://foundation.zurb.com/forum"} Foundation Forum
+                  = succeed "Join" do
+                    %br/
+            .grid-x.grid-padding-x
+              .large-4.medium-4.medium-push-2.cell
+                %p
+                  %a{:href => "http://github.com/zurb/foundation"} Foundation on Github
+                  = succeed "Latest" do
+                    %br/
+              .large-4.medium-4.medium-pull-2.cell
+                %p
+                  %a{:href => "https://twitter.com/ZURBfoundation"} @zurbfoundation
+                  = succeed "Ping" do
+                    %br/
+      .grid-x.grid-padding-x
+        .large-8.medium-8.cell
+          %h5 Here’s your basic grid:
+          / Grid Example
+          .grid-x.grid-padding-x
+            .large-12.cell
+              .primary.callout
+                %p
+                  %strong This is a twelve cell section in a grid-x.
+                  Each of these includes a div.callout element so you can see where the cell are - it's not required at all for the grid.
+          .grid-x.grid-padding-x
+            .large-6.medium-6.cell
+              .primary.callout
+                %p Six cell
+            .large-6.medium-6.cell
+              .primary.callout
+                %p Six cell
+          .grid-x.grid-padding-x
+            .large-4.medium-4.small-4.cell
+              .primary.callout
+                %p Four cell
+            .large-4.medium-4.small-4.cell
+              .primary.callout
+                %p Four cell
+            .large-4.medium-4.small-4.cell
+              .primary.callout
+                %p Four cell
+          %hr/
+          %h5 We bet you’ll need a form somewhere:
+          %form
+            .grid-x.grid-padding-x
+              .large-12.cell
+                %label Input Label
+                %input{:placeholder => "large-12.cell", :type => "text"}/
+            .grid-x.grid-padding-x
+              .large-4.medium-4.cell
+                %label Input Label
+                %input{:placeholder => "large-4.cell", :type => "text"}/
+              .large-4.medium-4.cell
+                %label Input Label
+                %input{:placeholder => "large-4.cell", :type => "text"}/
+              .large-4.medium-4.cell
+                .grid-x
+                  %label Input Label
+                  .input-group
+                    %input.input-group-field{:placeholder => "small-9.cell", :type => "text"}/
+                    %span.input-group-label .com
+            .grid-x.grid-padding-x
+              .large-12.cell
+                %label Select Box
+                %select
+                  %option{:value => "husker"} Husker
+                  %option{:value => "starbuck"} Starbuck
+                  %option{:value => "hotdog"} Hot Dog
+                  %option{:value => "apollo"} Apollo
+            .grid-x.grid-padding-x
+              .large-6.medium-6.cell
+                %label Choose Your Favorite
+                %input#pokemonRed{:name => "pokemon", :type => "radio", :value => "Red"}/
+                %label{:for => "pokemonRed"} Radio 1
+                %input#pokemonBlue{:name => "pokemon", :type => "radio", :value => "Blue"}/
+                %label{:for => "pokemonBlue"} Radio 2
+              .large-6.medium-6.cell
+                %label Check these out
+                %input#checkbox1{:type => "checkbox"}/
+                %label{:for => "checkbox1"} Checkbox 1
+                %input#checkbox2{:type => "checkbox"}/
+                %label{:for => "checkbox2"} Checkbox 2
+            .grid-x.grid-padding-x
+              .large-12.cell
+                %label Textarea Label
+                %textarea{:placeholder => "small-12.cell"}
+        .large-4.medium-4.cell
+          %h5 Try one of these buttons:
+          %p
+            %a.button{:href => "#"} Simple Button
+            %br/
+            %a.success.button{:href => "#"} Success Btn
+            %br/
+            %a.alert.button{:href => "#"} Alert Btn
+            %br/
+            %a.secondary.button{:href => "#"} Secondary Btn
+          .callout
+            %h5 So many components, girl!
+            %p A whole kitchen sink of goodies comes with Foundation. Check out the docs to see them all, along with details on making them your own.
+            %a.small.button{:href => "http://foundation.zurb.com/sites/docs/"} Go to Foundation Docs
+    %script{:src => "/js/jquery.js"}
+    %script{:src => "/js/foundation.js"}
+    %script{:src => "/js/app.js"}    
