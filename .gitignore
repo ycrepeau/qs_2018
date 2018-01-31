@@ -41,5 +41,5 @@ Thumbs.db
 
 package-lock.json
 www/
-nodes_modules/
+node_modules/
 bower_components/
