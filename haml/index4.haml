@@ -1,0 +1,80 @@
+!!!!
+%html.no-js{lang: 'en'}
+  %head 
+    %meta{charset: 'utf-8'}
+    %meta{http: {equiv: "x-ua-compatible"}, content: "ie=edge"}
+    %meta{name: 'viewport', content: "width=device-width, initial-scale=1.0"}
+    %link{rel:"stylesheet", href:"https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,400i,500,500i,600,600i,700,700i,800,900"}
+    %link{rel:"stylesheet", href:"css/app.css"}
+    %title Bonjour à tous!
+    
+  %body
+    %div{style:"height: 1cm"}
+    .grid-container
+      .grid-x
+        .shrink.cell.logo_qs
+          %img.img(src="/img/qs_2018_logo.svg")
+        .cell.auto.text_qs
+          .grid-y
+            .qs1 Québec solidaire
+            .qs2 Collectif Option Nationale
+      .grid-x
+        .cell.auto
+          %H1.text-center Invitation
+          %H2.text-center Assemblée fondation 
+          %H3.text-center Le 10 février de 08:30 à 17:00
+          %p &nbsp;
+      .grid-x
+        .cell.auto
+          %p.invitation
+            Le 10 février prochain aura lieu la fondation officielle du Collectif 
+            Option nationale. Cette rencontre aura lieu à l'UQAM, 320, rue Sainte-Catherine Est, local 
+            DS-R510 (Métro Berri-UQAM)
+          %p.invitation
+            C'est un rendez-vous pour toutes les personnes membres de Québec solidaire qui souhaitent travailler activement à sortir le régime colonial canadien du Québec. 
+  
+      .grid-x
+        .cell.auto 
+          %p.invitation
+            Il y a 12 postes d'exécutif en élection. Pour pouvoir se présenter, il faut fournir les documents suivants :
+          %div{style:"margin-left:25px"}
+            %ul.invitation
+              %li Dix (10) signatures de personnes membres de Québec Solidaire (Incluant nom complet et adresse)
+              %li Une lettre de présentation
+              %li Une photo
+          
+          %p.invitation
+            L'ensemble des documents doit être envoyé à info@opnat.quebec avant le mercredi 7 février 2018 à 13h00. 
+
+          %p.invitation
+            Au plaisir de vous y voir ! 
+          %H4.invitation.text-center Ordre du jour
+          %div{style:"margin:25px"}
+            
+            %ul.invitation.no-bullet
+              %li 8h30 Accueil
+              %li 9h00 Ouverture
+              %li 9h10 Discours de Sol Zanetti
+              %li 9h30 Présentation du plan d'action pour l'année 2018
+              %li 10h00 Présentation des candidatures ON pour 2018
+              %li 10h30 Présentation des candidatures au comité exécutif
+              %li 12h00 Ouverture des bureaux de vote et dîner
+              %li 13h05 Conférence Miguel Tremblay : Le territoire
+              %li 13h30 Fermeture des bureaux de vote
+              %li 13h45 Commissions thématiques et commission politique
+              %li 14h00 Plénière sur les statuts
+              %li 17h00 Dévoilement des résultats d'élection
+              %li 17h05 Discours de fermeture
+          %p.invitation
+            Pour toutes questions : info@opnat.quebec
+      .grid-x
+        - 4.times do |idx|
+          .cell.auto
+            %img.img2(src="/img/ON.svg")
+        
+          
+    %div{style:"height: 1cm"}
+    %script{src: "js/fontawesome-all.js"}
+    %script{src: "/js/jquery.js"}
+    %script{src: "/js/foundation.js"}
+    %script{src: "/js/app.js"}    
