@@ -11,11 +11,17 @@ de Québec solidaire.
 L'objectif est aussi d'aider les utilisateurRICEs de ce projet à rapidement
 maîtriser les outils suivants:
 
-* Git
-* Node
-* Gulp
-* Sass
-* Haml
+* Git (https://git-scm.com/)
+* Node (https://nodejs.org)
+* Gulp (https://gulpjs.com/)
+* Sass (http://sass-lang.com/)
+* Haml (http://haml.info/)
+* Coffescript (http://coffeescript.org/)
+
+Autres outils:
+* Zurb Foundation (https://foundation.zurb.com/)
+* jQuery (https://jquery.com/)
+* SVG (https://fr.wikipedia.org/wiki/Scalable_Vector_Graphics)
 
 Git
 ---
@@ -81,7 +87,8 @@ Charger le projet
 Il s'agit de la commande git qui va cloner le présent projet sur votre machine. Tapez la commande:
 
 ````
-    git clone ... information à vernir
+    git clone git@github.com:ycrepeau/qs_2018.git  ou
+    git clone https://github.com/ycrepeau/qs_2018.git
 ````
 
 Initialiser le projet
