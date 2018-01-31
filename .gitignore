@@ -40,6 +40,6 @@ Thumbs.db
 ###################################
 
 package-lock.json
-www
-nodes_modules
-bower_components
+www/
+nodes_modules/
+bower_components/
