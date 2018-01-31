@@ -1,6 +1,6 @@
 (function() {
   $(function() {
-    return console.log('Bonjour à toi!!! ');
+    return console.log('Bibliothèque jQuery chargée');
   });
 
 }).call(this);

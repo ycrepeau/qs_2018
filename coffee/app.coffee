@@ -1,2 +1,2 @@
 $ ->
-  console.log('Bonjour à toi!!! ')
+  console.log('Bibliothèque jQuery chargée *')
