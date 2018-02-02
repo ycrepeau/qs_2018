@@ -42,10 +42,15 @@ $clementine: #ff5505
 $minuit: #17173d 
 $base_size: 48pt
 $size_ratio: 0.6
+$medium_size: 0.75
+$small_size: 0.50
 
 
 .grid-container
   margin-top: 35px
+
+#entete
+  justify-content: center
 
 .text_qs 
   display: flex
@@ -55,8 +60,13 @@ $size_ratio: 0.6
   &.minuit
     background-color: $minuit
   &>.img
-    width: calc(#{$base_size * 5})
+    width: calc(#{$base_size * 2})
     height: auto
+
+    @include breakpoint(medium)
+      width: calc(#{$base_size * 3})
+    @include breakpoint(large)
+      width: calc(#{$base_size * 5})
   
 
 .qs1, .qs2
@@ -64,17 +74,30 @@ $size_ratio: 0.6
 
 
 .qs1
-  font-size: $base_size
+  font-size: calc(#{$base_size} * #{$small_size})
+  
   font-weight: 700
   color: $clementine
   &.minuit
     color: $minuit
   &.clementine
     color: $clementine
+  
+  @include breakpoint(medium)
+    font-size: calc(#{$base_size} * #{$medium_size})
+  @include breakpoint(large)
+    font-size: $base_size
+
 
 .qs2
-  font-size: calc(#{$base_size} * #{$size_ratio})
+  font-size: calc(#{$base_size} * #{$size_ratio}  * #{$small_size})
   font-weight: 600
+  @include breakpoint(medium)
+    font-size: calc(#{$base_size} * #{$size_ratio}  * #{$medium_size})
+  @include breakpoint(large)
+    font-size: calc(#{$base_size} * #{$size_ratio})
+
+
 
 .invitation
   font-weight: 200

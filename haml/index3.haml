@@ -11,10 +11,10 @@
   %body
     %div{style:"height: 1cm"}
     .grid-container
-      .grid-x
+      #entete.grid-x
         .shrink.cell.logo_qs
           %img.img(src="img/qs_2018_logo.svg")
-        .cell.auto.text_qs
+        .shrink.cell.text_qs
           .grid-y
             .qs1 Québec solidaire
             .qs2 Sainte-Marie — Saint-Jacques
@@ -22,8 +22,9 @@
         .cell.auto
           %H1.text-center Invitation
           %H2.text-center Assemblée de cuisine
+
       .grid-x.grid-margin-x
-        .cell.shrink
+        .cell.small-12.medium-3.large-2
           %img(src="img/ManonMassé2012.jpg")
           %p.invitation{style:"font-size: 9pt"} 
             Crédit photo: 
