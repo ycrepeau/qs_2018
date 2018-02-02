@@ -6227,6 +6227,10 @@ li {
 .grid-container {
   margin-top: 35px; }
 
+#entete {
+  -webkit-box-pack: center;
+          justify-content: center; }
+
 .text_qs {
   display: -webkit-box;
   display: flex;
@@ -6237,24 +6241,42 @@ li {
   background-color: #17173d; }
 
 .logo_qs > .img {
-  width: calc(240pt);
+  width: calc(96pt);
   height: auto; }
+  @media print, screen and (min-width: 40em) {
+    .logo_qs > .img {
+      width: calc(144pt); } }
+  @media print, screen and (min-width: 64em) {
+    .logo_qs > .img {
+      width: calc(240pt); } }
 
 .qs1, .qs2 {
   font-family: 'Poppins', sans-serif; }
 
 .qs1 {
-  font-size: 48pt;
+  font-size: calc(48pt * 0.5);
   font-weight: 700;
   color: #ff5505; }
   .qs1.minuit {
     color: #17173d; }
   .qs1.clementine {
     color: #ff5505; }
+  @media print, screen and (min-width: 40em) {
+    .qs1 {
+      font-size: calc(48pt * 0.75); } }
+  @media print, screen and (min-width: 64em) {
+    .qs1 {
+      font-size: 48pt; } }
 
 .qs2 {
-  font-size: calc(48pt * 0.6);
+  font-size: calc(48pt * 0.6  * 0.5);
   font-weight: 600; }
+  @media print, screen and (min-width: 40em) {
+    .qs2 {
+      font-size: calc(48pt * 0.6  * 0.75); } }
+  @media print, screen and (min-width: 64em) {
+    .qs2 {
+      font-size: calc(48pt * 0.6); } }
 
 .invitation {
   font-weight: 200; }
