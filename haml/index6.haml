@@ -1,0 +1,61 @@
+!!!!
+%html.no-js{lang: 'en'}
+  %head 
+    %meta{charset: 'utf-8'}
+    %meta{http: {equiv: "x-ua-compatible"}, content: "ie=edge"}
+    %meta{name: 'viewport', content: "width=device-width, initial-scale=1.0"}
+    %link{rel:"stylesheet", href:"https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,400i,500,500i,600,600i,700,700i,800,900"}
+    %link{rel:"stylesheet", href:"css/app.css"}
+    %script{:src => "js/modernizr.js"}
+    %title INVITATION
+    
+  %body
+    .grid-container
+      #entete.grid-x
+        .shrink.cell.logo_qs
+          %img.img(src="img/qs_2018_logo.svg")
+        .cell.auto.text_qs
+          .grid-y
+            .qs1 Québec solidaire
+            .qs2 Verdun
+
+      .grid-x
+        .cell.auto
+          %H2.text-center Lancement de la campagne pré-électorale! 
+          %H3.text-center Le 18 février de 13:30 à 15:30 au Baobab Café
+          %p
+
+      .grid-x.grid-margin-x
+        .cell.auto
+          %H3.invitation.text-center
+            Joignez-vous à nous pour le lancement de la campagne pré-électorale 2018 de Québec solidaire. Il y aura une diffusion par Internet à visionner et nous vous parlerons de nos tous nouveaux outils militants!
+          %p
+          %H4.invitation.text-center C'est à ne pas manquer! Au plaisir de vous y voir!
+          %p &nbsp;
+        .cell.shrink
+      
+      .grid-x
+        .cell.auto 
+          %H4.invitation.text-center
+            Cet événement et beaucoup d'autres se trouvent sur notre nouvelle plateforme:
+          %div{style:"margin-left:25px"}
+
+          %p
+
+          %H2.invitation.text-center mouvement.quebecsolidaire.net
+
+          %p &nbsp;
+
+          %div{style:"margin-left:100px"}
+          %img.img(src="img/Mouvement.png")
+
+          %p &nbsp;
+          
+          %H4.invitation.text-center
+            Contactez-nous: verdun@quebecsolidaire.net
+          
+    %div{style:"height: 1cm"}
+    %script{src: "js/fontawesome-all.js"}
+    %script{src: "js/jquery.js"}
+    %script{src: "js/foundation.js"}
+    %script{src: "js/app.js"}    
