@@ -1,0 +1,54 @@
+!!!!
+%html.no-js{lang: 'en'}
+  %head 
+    %meta{charset: 'utf-8'}
+    %meta{http: {equiv: "x-ua-compatible"}, content: "ie=edge"}
+    %meta{name: 'viewport', content: "width=device-width, initial-scale=1.0"}
+    %link{rel:"stylesheet", href:"https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,400i,500,500i,600,600i,700,700i,800,900"}
+    %link{rel:"stylesheet", href:"css/app.css"}
+    %script{:src => "js/modernizr.js"}
+    %title Bonjour à tous!
+    
+  %body
+    %div{style:"height: 1cm"}
+    .grid-container
+      #entete.grid-x
+        .shrink.cell.logo_qs
+          %img.img(src="img/qs_2018_logo.svg")
+        .cell.auto.text_qs
+          .grid-y
+            .qs1 Québec solidaire
+            .qs2 Bonnaventure
+      .grid-x
+        .cell.auto
+          %H1.text-center Invitation
+          %H2.text-center Lancement de la camagne pré-électorale 
+          %H3.text-center Le 18 février de 13:30 à 15:30 à la Maison des Jeunes de Paspébiac
+          %H4.text-center 178 9e Rue, Paspébiac, QC G0C 2K0
+          %p &nbsp;
+      .grid-x.grid-margin-x
+        .cell.auto
+          %p.invitation
+            Joignez-vous à nous pour le lancement de la campagne pré-électorale 2018 de Québec solidaire.
+            Il y aura une diffusion par Internet à visionner et nous parleront de nos tout nouveaux outils militants.
+          %p.invitation
+            C'est à ne pas manquer.
+
+      .grid-x.grid-margin-x
+        .cell.shrink
+          %img.img(src="img/Mouvement.png")
+        .cell.auto
+          %p.invitation
+            Cette événement et beaucoup d'autres se trouvent sur notre nouvelle plateforme:
+          %H3.text-center
+            http://mouvement.quebecsolidaire.net 
+          
+
+      
+
+          
+    %div{style:"height: 1cm"}
+    %script{src: "js/fontawesome-all.js"}
+    %script{src: "js/jquery.js"}
+    %script{src: "js/foundation.js"}
+    %script{src: "js/app.js"}    
